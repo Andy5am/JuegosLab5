@@ -20,4 +20,12 @@ public class Menu : MonoBehaviour
     {
         SceneManager.LoadScene(num);
     }
+    public void subirVolumen()
+    {
+        GetComponent<AudioSource>().volume += 0.1f;
+    }
+    public void bajarVolumen()
+    {
+        GetComponent<AudioSource>().volume-= 0.1f;
+    }
 }
